@@ -1,1 +1,51 @@
-This is our JS Quizzer
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Javascript Algorithm Quiz Game</title>
+  </head>
+
+  <body>
+
+    <header>
+    <h1> 2:00</h1>
+</header>
+<div class="flex-container">
+
+  <div id="flex-main"  class="flex-item">
+    <h1> Predict the output of the following code:</h1>
+    <div id="question">
+<pre>
+var x = 1;
+
+for(var i = 0; i < 3; i++)
+{
+  x = x + 1;
+}
+
+console.log(x);
+</pre>
+      <div id="answer">
+        <input type="text" id="ans" placeholder="Your answer"> <input type="submit" id="submit" value="SUBMIT" name="submit">
+      </div>
+    </div> <!-- end question -->
+
+  </div> <!-- end flex-main -->
+
+  <div id="flex-notepad" class="flex-item">
+    <h1> Notepad </h1>
+    <div id="textbox">
+      <textarea rows="30" cols="30"></textarea>
+    </div> <!-- end textbox -->
+  </div> <!-- end flex-notepad -->
+
+</div><!-- end flex-container -->
+<footer>
+ <ul>
+   <li><a href="#"> About </a></li>
+   <li><a href="#"> Credit </a></li>
+  </ul>
+</footer>
+
+  </body>
+</html>
