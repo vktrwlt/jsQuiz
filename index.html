@@ -4,9 +4,10 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Algorithm Quiz Game</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="js/quiz.js"> </script>
   </head>
 
-  <body>
+  <body onload="tutorial()">
 
 <div class="flex-container">
 
@@ -20,21 +21,14 @@
 
 
     <div id="question">
-<pre>
-var x = 1;
 
-for(var i = 0; i < 3; i++)
-{
-  x = x + 1;
-}
 
-console.log(x);
-</pre>
-      <div id="answer">
-        <input type="text" id="ans" placeholder="Your answer"> <input type="submit" id="submit" value="SUBMIT" name="submit">
-      </div>
+
     </div> <!-- end question -->
-
+    <div id="answer">
+      <input type="text" id="ans" placeholder="Your answer"> <button id="ansButton" onclick="nextQuestion()"> Submit </button>
+    </div><!-- end answer -->
+    <div id="test"></div>
   </div> <!-- end flex-main -->
 
   <div id="flex-notepad" class="flex-item">
