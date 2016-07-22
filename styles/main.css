@@ -10,10 +10,17 @@ font-family:Arial;
 body{
 display:flex;
 flex-direction:column;
-background-color:#fcbd6c;
+background-color:#faebd7;
 }
 header{
 text-align:center;
+color:black;
+}
+header h1{
+  font-size:3rem;
+}
+#timer{
+
 }
 footer{
 text-align:center;
@@ -29,6 +36,11 @@ footer ul li {
 display:inline;
 padding:.5em;
 font-size:.9rem;
+}
+
+footer ul li a {
+  color:white;
+  text-decoration: none;
 }
 
 .flex-container{
@@ -68,6 +80,9 @@ pre{
 font-size:1.5rem;
 font-weight:bold;
 }
+#question{
+  color:blue;
+}
 #answer{
 display:flex;
 flex-direction:row;
@@ -83,7 +98,7 @@ justify-content:center;
 margin-left:20px;
 flex:1;
 color: #fff;
-background-color: #5cb85c;
+background-color: #4CAF50;
 border-color: #5cb85c;
 border-radius:2px;
 
