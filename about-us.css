@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  display: block;
+  max-width: 1000px;
+  max-height: 1000px;
+  position: fixed;
+
+}
+
+.profile {
+
+    -webkit-columns: 100px 5; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 5; /* Firefox */
+    columns: 100px 5;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+
+    -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
+    -moz-column-rule: 4px outset #ff00ff; /* Firefox */
+    column-rule: 4px outset #ff00ff;
+}
+
+img {
+  border-radius: 50%;
+  align-items: center;
+
+}
