@@ -91,6 +91,9 @@ function nextQuestion(){
   //reset the answer bar
   document.getElementById('ans').value = "";
 
+  //reset the notepad
+  document.getElementById('pad').value = "";
+  
   // test score counter
   document.getElementById('test').textContent = score;
 

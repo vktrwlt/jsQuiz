@@ -1,125 +1,110 @@
-
 /* *{
 border:1px dashed #222;
 } */
-html,body{
-height:100%;
-margin:0;
-font-family:Arial;
-}
-body{
-display:flex;
-flex-direction:column;
-background-color:white;
-}
-#timer{
-display:flex;
-justify-content: flex-end;
 
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
 }
-#timer h1{
-  background-color:#4CAF50;
-  padding:.5em;
-  color:white;
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
 }
-#timer h2{
-display:flex;
-margin-right:auto;
-align-items: center;
-font-size:170%;
+#timer {
+    display: flex;
+    justify-content: flex-end;
 }
-
-#pad{
-  display:flex;
-  width:100%;
-  height:50vh;
-  resize: none;
+#timer h1 {
+    background-color: #4CAF50;
+    padding: .5em;
+    color: white;
 }
-
-footer{
-text-align:center;
-
-  color:black;
-
+#timer h2 {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    font-size: 170%;
 }
-footer ul{
-
-list-style:none;
+#pad {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    resize: none;
+}
+footer {
+    text-align: center;
+    color: black;
+}
+footer ul {
+    list-style: none;
 }
 footer ul li {
-display:inline;
-padding:.5em;
-font-size:.9rem;
+    display: inline;
+    padding: .5em;
+    font-size: .9rem;
 }
-
 footer ul li a {
-color:black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
-
-.flex-container{
-display:flex;
-flex:1;
-width:75vw;
-margin:auto;
-margin-top:5vh;
-margin-bottom:5vh;
+.flex-container {
+    display: flex;
+    flex: 1;
+    width: 75vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
-
-.flex-item{
-padding: 0 2em 0 2em;
-border:1px solid #eee;
-border-radius: 3px;
-
+.flex-item {
+    padding: 0 2em 0 2em;
+    border: 1px solid #eee;
+    border-radius: 3px;
 }
-
-#flex-main{
-flex:1;
-background-color:hsla(31,15%,50%,.1);
-
+#flex-main {
+    flex: 1;
+    background-color: hsla(31, 15%, 50%, .1);
 }
-#flex-notepad{
-/* notepad box will not shrink or grow when resized. It will always be 30% of the screen. */
-background-color: #f6f7dc;
-margin-left:2vw;
-flex-grow:0;
-flex-shrink:0;
-flex-basis: 30%;
+#flex-notepad {
+    /* notepad box will not shrink or grow when resized. It will always be 30% of the screen. */
+    background-color: #f6f7dc;
+    margin-left: 2vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30%;
 }
-#flex-notepad h1{
-
+#question {
+    padding-left: 3vw;
+    color: blue;
+    font-size: 175%;
+    line-height: 225%;
+    min-height: 40vh;
 }
-
-/* test code remove later */
-pre{
-font-size:1.5rem;
-font-weight:bold;
+#answer {
+    display: flex;
+    flex-direction: row;
 }
-#question{
-  padding-left:3vw;
-  color:blue;
-  font-size:175%;
-  line-height: 225%;
-  min-height:40vh;
+input[type="text"] {
+    display: flex;
+    flex: 8;
+    height: 55px;
+    border: 1px solid #4CAF50;
+    padding-left:1vw;
 }
-#answer{
-display:flex;
-flex-direction:row;
-
+#ansButton {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    flex: 1;
+    color: #fff;
+    background-color: #4CAF50;
+    border-color: #5cb85c;
+    border-radius: 2px;
+    font-weight:600;
+    font-size:110%;
+    letter-spacing: 1px;
 }
-input[type="text"]{
-display:flex;
-flex:8;
-height:55px;
-}
-#ansButton{
-display:flex;
-justify-content:center;
-margin-left:20px;
-flex:1;
-color: #fff;
-background-color: #4CAF50;
-border-color: #5cb85c;
-border-radius:2px;
-
+#test-wrapper{
+  margin-top:2vh;
 }
