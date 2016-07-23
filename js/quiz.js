@@ -47,10 +47,10 @@ var quiz = [{
 
 var currentQuestion = 0;
 var score = 0;
-var answer = document.getElementById('ans');
+var answer = document.getElementById("ans");
 
 //Press Enter key to submit answer
-$('#ans').keypress(function(e) {
+$("#ans").keypress(function(e) {
     if (e.which == 13) {
         nextQuestion();
     }
@@ -58,11 +58,11 @@ $('#ans').keypress(function(e) {
 
 function countdown(minutes) {
     var seconds = 60;
-    var mins = minutes
+    var mins = minutes;
 
     function tick() {
         var counter = document.getElementById("counter");
-        var current_minutes = mins - 1
+        var current_minutes = mins - 1;
         seconds--;
         counter.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
 
@@ -105,26 +105,26 @@ function tutorial() {
 
 function loadQuestion() {
 
-    document.getElementById('question').innerHTML = quiz[currentQuestion]["question"];
+    document.getElementById("question").innerHTML = quiz[currentQuestion]["question"];
 
 }
 
 
 function nextQuestion() {
-    answer = document.getElementById('ans').value;
+    answer = document.getElementById("ans").value;
 
     //Check if input is the answer, if so +1 to score.
     if (answer.toString().trim() == quiz[currentQuestion]["answer"].toString()) {
         score++;
     }
     //reset the answer bar
-    document.getElementById('ans').value = "";
+    document.getElementById("ans").value = "";
 
     //reset the notepad
-    document.getElementById('pad').value = "";
+    document.getElementById("pad").value = "";
 
     // test score counter
-    document.getElementById('test').textContent = score;
+    document.getElementById("test").textContent = score;
 
     currentQuestion++;
 
@@ -132,8 +132,6 @@ function nextQuestion() {
     if (currentQuestion == quiz.length) {
         currentQuestion = 0;
     }
-
-
 
     loadQuestion();
 
