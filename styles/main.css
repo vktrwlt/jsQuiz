@@ -32,7 +32,8 @@ font-size:170%;
 #pad{
   display:flex;
   width:100%;
-  height:45vh;
+  height:50vh;
+  resize: none;
 }
 
 footer{
@@ -95,12 +96,16 @@ font-size:1.5rem;
 font-weight:bold;
 }
 #question{
+  padding-left:3vw;
   color:blue;
+  font-size:175%;
+  line-height: 225%;
+  min-height:40vh;
 }
 #answer{
 display:flex;
 flex-direction:row;
-margin-top:15vh;
+
 }
 input[type="text"]{
 display:flex;

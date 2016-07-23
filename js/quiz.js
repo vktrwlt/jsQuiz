@@ -1,24 +1,50 @@
+
+var arr = [];
+var len = 10;
+
+// generate random # from 1 to 16
+for (var i = 0; i < len; i++){
+	arr.push(Math.floor((Math.random() * 15) + 1));
+}
+
+//need to refactor this code
+var a = arr[0];
+var b = arr[1];
+var c = arr[2];
+var d = arr[3];
+var e = arr[4];
+var f = arr[5];
+var g = arr[6];
+var h = arr[7];
+
+
+
+
 var quiz = [
+  {
+    "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x);",
 
+    "answer": "[" + [a,b,c] + "]"
+ },
+  {
+    "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x[0]);",
+
+    "answer": a
+  },
  {
-   "question": "var x = [1,3,5]; <br/> console.log(x[0]);",
+   "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x[1]);",
 
-   "answer": "1"
+   "answer": b
  },
  {
-   "question": "var x = [2,4,6]; <br/> console.log(x[1]);",
+   "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x[2]);",
 
-   "answer": "4"
+   "answer": c
  },
- {
-   "question": "var x = [1,3,5]; <br/> console.log(x[2]);",
+{
+  "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> x[0] = x[1]; <br/> console.log(x);",
 
-   "answer": "5"
- },
- {
-   "question": "var x = [1,2,4]; <br/> console.log(x);",
-
-   "answer": "[1,2,4]"
+  "answer": "[" + [b,b,c] + "]"
 }
 
 
@@ -28,6 +54,13 @@ var quiz = [
 var currentQuestion = 0;
 var score = 0;
 var answer = document.getElementById('ans');
+
+//Press Enter key to submit answer
+$('#ans').keypress(function(e) {
+if (e.which == 13) {
+nextQuestion();
+}
+});
 
 
 //insert Tona's code here
@@ -52,7 +85,7 @@ function nextQuestion(){
    answer = document.getElementById('ans').value;
 
   //Check if input is the answer, if so +1 to score.
-  if (answer.toString() == quiz[currentQuestion]["answer"]){
+  if (answer.toString().trim() == quiz[currentQuestion]["answer"].toString()){
     score++;
   }
   //reset the answer bar

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Algorithm Quiz Game</title>
     <link rel="stylesheet" href="styles/main.css">
-    <script src="js/quiz.js"> </script>
+
   </head>
 
   <body onload="tutorial()">
@@ -14,10 +14,8 @@
   <div id="flex-main"  class="flex-item">
       <div id="timer">
   <h2> Predict the output of the following code:</h2>
-        <h1> 2:00</h1></div><!-- end timer -->
+        <h1> 1:00</h1></div><!-- end timer -->
           <hr />
-
-
 
 
     <div id="question">
@@ -26,7 +24,7 @@
 
     </div> <!-- end question -->
     <div id="answer">
-      <input type="text" id="ans" placeholder="Your answer"> <button id="ansButton" onclick="nextQuestion()"> Submit </button>
+      <input type="text" id="ans" placeholder="Your answer"> <button id="ansButton"  onclick="nextQuestion()"> Submit </button>
     </div><!-- end answer -->
     <div id="test"></div>
   </div> <!-- end flex-main -->
@@ -34,7 +32,7 @@
   <div id="flex-notepad" class="flex-item">
     <h1> Notepad </h1>
     <div id="textbox">
-      <input id="pad"/>
+      <textarea id="pad"></textarea>
     </div> <!-- end textbox -->
   </div> <!-- end flex-notepad -->
 
@@ -46,5 +44,11 @@
   </ul>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="js/quiz.js"> </script>
+
+<script>
+
+</script>
   </body>
 </html>
