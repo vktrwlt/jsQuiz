@@ -59,33 +59,32 @@ $('#ans').keypress(function(e) {
 function countdown(minutes) {
     var seconds = 60;
     var mins = minutes
+
     function tick() {
         var counter = document.getElementById("counter");
-        var current_minutes = mins-1
+        var current_minutes = mins - 1
         seconds--;
         counter.innerHTML = current_minutes.toString() + ":" + (seconds < 10 ? "0" : "") + String(seconds);
 
-				//Open score & retry popup when counter is 0.
-				if(counter.innerHTML == "0:00"){
-					endGame();
-				}
+        //Open score & retry popup when counter is 0.
+        if (counter.innerHTML == "0:00") {
+            endGame();
+        }
 
-        if( seconds > 0 ) {
+        if (seconds > 0) {
             setTimeout(tick, 1000);
 
         } else {
 
-            if(mins > 1){
+            if (mins > 1) {
 
-                countdown(mins-1);
+                countdown(mins - 1);
 
             }
         }
 
     }
-
     tick();
-
 }
 
 
@@ -96,8 +95,8 @@ function tutorial() {
     //Remove this later
     alert("Start Game?");
 
-		//countdown begins when alert or modal is done.
-		countdown(1);
+    //countdown begins when alert or modal is done.
+    countdown(1);
     //load Questions
     loadQuestion();
 }
@@ -133,16 +132,19 @@ function nextQuestion() {
     if (currentQuestion == quiz.length) {
         currentQuestion = 0;
     }
+
+
+
     loadQuestion();
 
 }
- // insert code for popup and retry button
- function endGame(){
+// insert code for popup and retry button
+function endGame() {
 
-	 alert("GG! You scored:  " + score);
-	 var retry = confirm("Retry");
-	 if(retry){
-		 location.reload();
-	 }
+    alert("GG! You scored:  " + score);
+    var retry = confirm("Retry");
+    if (retry) {
+        location.reload();
+    }
 
- }
+}
