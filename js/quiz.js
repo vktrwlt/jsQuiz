@@ -3,6 +3,7 @@ var currentQuestion = 0;
 var score = 0;
 var answer = document.getElementById("ans");
 var quiz = {};
+
 //Press Enter key to submit answer
 $("#ans").keypress(function(e) {
     if (e.which == 13) {
@@ -10,6 +11,7 @@ $("#ans").keypress(function(e) {
     }
 });
 
+//countdown function input only in minutesm, mininum 1 minute
 function countdown(minutes) {
     var seconds = 60;
     var mins = minutes;
@@ -52,12 +54,12 @@ function tutorial() {
     //countdown begins when alert or modal is done.
     countdown(1);
     //load Questions
-    loadQuestion();
+    firstQuestion();
 }
 
 
-
-function loadQuestion() {
+// first question is always the easiest
+function firstQuestion() {
    quiz = [{
           "question": "var x = 1; <br/> console.log(x);",
 
@@ -67,10 +69,10 @@ function loadQuestion() {
 
 }
 
+/*check if input from answer bar is correct, if so +1 score, reset inputs
+   and get a new question */
 
 function nextQuestion() {
-
-
 
     answer = document.getElementById("ans").value;
 
@@ -98,6 +100,7 @@ function nextQuestion() {
     document.getElementById("sol").innerHTML = quiz[currentQuestion]["answer"];
 }
 
+// Give new values on each question.
 function randomQuestion(){
   var arr = [];
   var len = 10;
@@ -119,24 +122,29 @@ function randomQuestion(){
 
 
 
-
-   quiz = [{
+  // Enter Questions Here
+   quiz = [
+      {
           "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x);",
 
           "answer": "[" + [a, b, c] + "]"
-      }, {
+      },
+      {
           "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x[0]);",
 
           "answer": a
-      }, {
+      },
+      {
           "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x[1]);",
 
           "answer": b
-      }, {
+      },
+      {
           "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x[2]);",
 
           "answer": c
-      }, {
+      },
+      {
           "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> x[0] = x[1]; <br/> console.log(x);",
 
           "answer": "[" + [b, b, c] + "]"

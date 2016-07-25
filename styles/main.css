@@ -108,3 +108,9 @@ input[type="text"] {
 #test-wrapper{
   margin-top:2vh;
 }
+
+@media screen and (max-width:768px){
+  #flex-notepad{
+    display:none;
+  }
+}
