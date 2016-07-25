@@ -49,7 +49,7 @@ function countdown(minutes) {
 function tutorial() {
 
     //Remove this later
-    alert("Start Game?");
+    // alert("Start Game?");
 
     //countdown begins when alert or modal is done.
     countdown(1);
@@ -103,11 +103,17 @@ function nextQuestion() {
 // Give new values on each question.
 function randomQuestion(){
   var arr = [];
+  var small =[];
   var len = 10;
+
 
   // generate random # from 1 to 16
   for (var i = 0; i < len; i++) {
       arr.push(Math.floor((Math.random() * 15) + 1));
+  }
+// generate random # from 1 to 3
+  for (var j = 0; j < len; j++) {
+      small.push(Math.floor((Math.random() * 2) + 1));
   }
 
   //need to refactor this code
@@ -120,10 +126,22 @@ function randomQuestion(){
   var g = arr[6];
   var h = arr[7];
 
-
+  var q = small[0];
+  var r = small[1];
+  var s = small[2];
 
   // Enter Questions Here
    quiz = [
+     {
+      "question": "var x = " + q + ";<br/> for(var i = 0; i < 3; i++)<br/>{ <br/> x = x + 1; <br/> console.log(i); <br/> }",
+
+      "answer": (q+1) + "," + (q+2) + "," +(q+3) + "," + (q+4) 
+  },
+     {
+      "question": "for(var i = 0; i < 5; i++){ <br/> console.log(i); <br/> }",
+
+      "answer": "0,1,2,3,4"
+  },
       {
           "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x);",
 
@@ -158,12 +176,12 @@ function randomQuestion(){
 
 
 // insert code for popup and retry button
-function endGame() {
-
-    alert("GG! You scored:  " + score);
-    var retry = confirm("Retry");
-    if (retry) {
-        location.reload();
-    }
-
-}
+// function endGame() {
+//
+//     alert("GG! You scored:  " + score);
+//     var retry = confirm("Retry");
+//     if (retry) {
+//         location.reload();
+//     }
+//
+// }
