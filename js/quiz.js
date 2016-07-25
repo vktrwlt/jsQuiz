@@ -124,6 +124,36 @@ function randomQuestion(){
 
   // Enter Questions Here
    quiz = [
+     {
+      "question": "var x = " + a + "; <br/> console.log(x);",
+      "answer": a
+    },
+
+{
+      "question": "var x = " + a + "; <br/>"+
+      "x = x + " + b + "<br/> console.log(x);",
+      "answer": a+b
+    },
+{
+      "question": "var x = [" + a + "," + b + "," + c + "];" + " <br/> var y = x.length; <br/> console.log(x);",
+       "answer": 3
+    },
+{
+      "question": "var x = [" + a + "," + b + "," + c + "," + d + "];" + " <br/> var y = x.length - 2; <br/> console.log(x[y]);",
+       "answer": c
+    },
+{
+      "question": "var x = [" + a + "," + b + "," + c + "," + d + "];" + " <br/>  x[0] = x[x.length - 2]; <br/> console.log(x);",
+       "answer":  "[" + [c, b, c,d] + "]"
+    },
+{
+      "question": "var x = [" + a + "," + b + "," + c + "," + d + "];" + " <br/>  x[x.length - 3] = x[x.length / 2 + x.length / 4]; <br/> console.log(x);",
+       "answer":  "[" + [a, d, c, d] + "]"
+    },
+      {
+        "question": "var x = [" + a + "," + b + "," + c + "," + d + "];" + " <br/>  var y = [" + e + "," + f + "," + g +"];" + "<br/> x[2] = y[x.length - 3] + x[x[0] + y[0]]; <br/> console.log(x);",
+         "answer":  "[" + [a, d, c, d] + "]"
+      },
       {
           "question": "var x = [" + a + "," + b + "," + c + "];" + "<br/> console.log(x);",
 
