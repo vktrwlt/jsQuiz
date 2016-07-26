@@ -27,12 +27,7 @@ body {
     align-items: center;
     font-size: 170%;
 }
-#pad {
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    resize: none;
-}
+
 footer {
     text-align: center;
     color: black;
@@ -74,12 +69,19 @@ footer ul li a {
     flex-shrink: 0;
     flex-basis: 30%;
 }
+#pad {
+    display: flex;
+    width: 100%;
+    height: 56vh;
+    resize: none;
+}
 #question {
     padding-left: 3vw;
-    color: blue;
-    font-size: 175%;
-    line-height: 225%;
-    min-height: 40vh;
+    color: #3048ff;
+    font-size: 165%;
+    line-height: 190%;
+    letter-spacing: 1px;
+    min-height: 45vh;
 }
 #answer {
     display: flex;
