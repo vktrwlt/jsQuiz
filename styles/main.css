@@ -118,7 +118,7 @@ input[type="text"] {
 }
 @media screen and (max-width:640px){
   body{
-    font-size:60%;
+    font-size:50%;
   }
   .flex-container {
       width: 95vw;
