@@ -132,4 +132,7 @@ input[type="text"] {
       letter-spacing: 1px;
       min-height: 35vh;
   }
+  footer{
+    display:none;
+  }
 }
