@@ -116,3 +116,20 @@ input[type="text"] {
     display:none;
   }
 }
+@media screen and (max-width:640px){
+  body{
+    font-size:60%;
+  }
+  .flex-container {
+      width: 95vw;
+      margin: auto;
+      margin-top: 1vh;
+      margin-bottom: 1vh;
+  }
+  #question {
+      padding-left: 3vw;
+      color: #3048ff;
+      letter-spacing: 1px;
+      min-height: 35vh;
+  }
+}
