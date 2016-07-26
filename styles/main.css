@@ -120,6 +120,7 @@ input[type="text"] {
   body{
     font-size:50%;
   }
+
   .flex-container {
       width: 95vw;
       margin: auto;
@@ -132,7 +133,7 @@ input[type="text"] {
       letter-spacing: 1px;
       min-height: 35vh;
   }
-  footer{
+  footer, #ansButton{
     display:none;
   }
 }
