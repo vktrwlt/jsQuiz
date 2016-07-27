@@ -37,11 +37,12 @@ function countdown(minutes) {
 
 function tutorial() {
         //Remove this later
-        alert("Start Game?");
+        // alert("Start Game?");
+        modal.style.display = "block";
         // //countdown begins when alert or modal is done.
-        countdown(1);
+
         //load Questions
-        firstQuestion();
+
     }
 
 		// first question is always the easiest
@@ -175,5 +176,30 @@ function endGame() {
     var retry = confirm("Retry");
     if (retry) {
         location.reload();
+    }
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+    countdown(1);
+    firstQuestion();
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        countdown(1);
+        firstQuestion();
     }
 }
