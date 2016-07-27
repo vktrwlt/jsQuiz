@@ -109,9 +109,10 @@ input[type="text"] {
 }
 #test-wrapper{
   margin-top:2vh;
+  display:none;
 }
 
-.modal {
+.modal, .modal-1{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -132,12 +133,10 @@ input[type="text"] {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 50vw;
+    width: 40vw;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
-
-
 
 /* The Close Button */
 .close {
@@ -153,18 +152,39 @@ input[type="text"] {
     text-decoration: none;
     cursor: pointer;
 }
-
+#go-button,#restart{
+  color: #fff;
+  background-color: #4CAF50;
+  border-color: #5cb85c;
+  border-radius: 2px;
+  font-weight:600;
+  font-size:150%;
+  letter-spacing: 1px;
+  padding:20px 40px;
+}
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #4CAF50;
     color: white;
+    text-align: center;
+
 }
 
-.modal-body {padding: 2px 16px;}
+
+
+.modal-body {
+  padding: 2px 16px;
+  font-size:125%;
+}
+
+.modal-body ul{
+  list-style: none;
+}
 
 .modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    display: flex;
+    justify-content: center;
+    margin:3vh 0;
     color: white;
 }
 

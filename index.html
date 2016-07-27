@@ -16,24 +16,28 @@
             <div id="timer">
                 <h2> Predict the output of the following code:</h2>
                 <h1 id="counter"> 1:00</h1>
-            </div><!-- end timer -->
+            </div>
+            <!-- end timer -->
 
             <hr />
 
 
             <div id="question">
-            </div><!-- end question -->
+            </div>
+            <!-- end question -->
             <div id="answer">
                 <input type="text" id="ans" placeholder="Your answer">
                 <button id="ansButton" onclick="nextQuestion()"> Submit </button>
-            </div><!-- end answer -->
+            </div>
+            <!-- end answer -->
 
-            <!-- delete this test-wrapper at the end -->
+            <!--cant delete this wrapper, don't know why. temp solution: display:none -->
             <div id="test-wrapper">
-              <span>Score Tester: </span>
-              <span id="test"></span>
-              <p id="sol"></p>
-            </div> <!-- test-wrapper -->
+                <span>Score Tester: </span>
+                <span id="test"></span>
+                <p id="sol"></p>
+            </div>
+            <!-- test-wrapper -->
         </div>
         <!-- end flex-main -->
 
@@ -41,11 +45,14 @@
             <h1> Notepad </h1>
             <div id="textbox">
                 <textarea id="pad"></textarea>
-            </div>  <!-- end textbox -->
+            </div>
+            <!-- end textbox -->
 
-        </div><!-- end flex-notepad -->
+        </div>
+        <!-- end flex-notepad -->
 
-    </div>  <!-- end flex-container -->
+    </div>
+    <!-- end flex-container -->
 
     <footer>
         <ul>
@@ -53,24 +60,61 @@
             <li><a href="#"> Credit </a></li>
         </ul>
     </footer>
-    <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">×</span>
-      <h2>Modal Header</h2>
-    </div>
-    <div class="modal-body">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
-    </div>
-    <div class="modal-footer">
-      <h3>Modal Footer</h3>
-    </div>
-  </div>
+    <div id="tutorial" class="modal">
 
-</div>
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Javascript Algorithm Quiz</h2>
+            </div> <!-- end modal-header -->
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <p> Answer as many as you can</p>
+                    </li>
+                    <li>
+                        <p> Press "Enter" to submit your answer</p>
+                    </li>
+
+                    <li>
+                        <p> Wrong answers will not count against your score</p>
+                    </li>
+                    <li>
+                        <p> Put in [ ] , if the answer is an array</p>
+                    </li>
+                    <li>
+                        <p> Seperate answers with a comma for each console.log();</p>
+                    </li>
+                    <li>
+                        <p> Good Luck!</p>
+                    </li>
+                </ul>
+            </div><!-- end modal-body -->
+            <div class="modal-footer">
+                <button id="go-button"> Start </button>
+            </div><!-- end modal-footer -->
+        </div><!-- end modal-content -->
+
+    </div><!-- end tutorial modal -->
+
+    <div id="retry" class="modal-1">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Javascript Algorithm Quiz</h2>
+            </div> <!-- end modal-header -->
+            <div class="modal-body">
+              <p>Your Score: <span id="score"></span></p>
+
+            </div><!-- end modal-body -->
+            <div class="modal-footer">
+                <button id="restart"> Try Again </button>
+            </div><!-- end modal-footer -->
+        </div><!-- end modal-content -->
+
+    </div><!-- end retry modal -->
 
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>

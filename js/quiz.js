@@ -71,6 +71,7 @@ function nextQuestion() {
         document.getElementById("pad").value = "";
         // test score counter
         document.getElementById("test").textContent = score;
+        document.getElementById("score").textContent = score;
         currentQuestion++;
         // Remove this later, lazy code for having only 4 questions
         if (currentQuestion == quiz.length) {
@@ -172,28 +173,27 @@ function randomQuestion() {
     // insert code for popup and retry button
 
 function endGame() {
-    alert("GG! You scored:  " + score);
-    var retry = confirm("Retry");
-    if (retry) {
-        location.reload();
-    }
+
+    retry.style.display = "block";
+    // alert("GG! You scored:  " + score);
+    // var retry = confirm("Retry");
+    // if (retry) {
+    //     location.reload();
+    // }
 }
 
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById("tutorial");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// start button
+var go = document.getElementById("go-button");
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+go.onclick = function() {
     modal.style.display = "none";
     countdown(1);
     firstQuestion();
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -202,4 +202,24 @@ window.onclick = function(event) {
         countdown(1);
         firstQuestion();
     }
-}
+};
+
+// Get the modal
+var retry = document.getElementById('retry');
+
+// Get the <span> element that closes the modal
+var restart = document.getElementById("restart");
+
+// When the user clicks on <span> (x), close the modal
+restart.onclick = function() {
+    retry.style.display = "none";
+    location.reload();
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == retry) {
+        retry.style.display = "none";
+
+    }
+};
