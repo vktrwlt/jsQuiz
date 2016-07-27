@@ -20,3 +20,7 @@
         "question": "var x = [" + a + "," + b + "," + c + "," + d + "];" + " <br/>  x[0] = x[x.length - 2]; <br/> console.log(x);",
          "answer":  "[" + [c, b, c,d] + "]"
       },
+{
+        "question": "var x = [" + a + "," + b + "," + c + "," + d + "];" + " <br/>  x[x.length - 3] = x[x.length / 2 + x.length / 4]; <br/> console.log(x);",
+         "answer":  "[" + [a, d, c, d] + "]"
+      },
