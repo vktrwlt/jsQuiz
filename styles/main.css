@@ -261,6 +261,10 @@ input[type="text"] {
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
+    .modal,.modal-1 {
+      top: -40px;
+    }
+
     .modal-content {
       width:90vw;
     }
