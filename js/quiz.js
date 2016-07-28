@@ -218,14 +218,12 @@ window.onclick = function(event) {
     }
 };
 
-var h = false;
+var pop = false;
 $("#credit").click(function(){
-    if (h == false){
-        $("#popUp").fadeIn();
-        $("#creditText").fadeIn(function(){h = true;});
+    if (pop == false){
+        $("#creditText").fadeIn(function(){pop = true;});
     }
-    if (h == true){
-        $("#popUp").fadeOut();
-        $("#creditText").fadeOut(function(){h=false});
+    if (pop == true){
+        $("#creditText").fadeOut(function(){pop=false});
     }
 });
