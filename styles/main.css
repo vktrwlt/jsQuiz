@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
 html,body {
     height: 100%;
     margin: 0;
@@ -17,6 +18,17 @@ header{
   background-color: #4CAF50;
   padding: .1em;
   color: #fff;
+}
+
+.doodle{
+
+height: 9vh;
+width: auto;
+}
+.img-fluid{
+  /*width:100%;
+  height:auto;*/
+
 }
 
 #timer {
