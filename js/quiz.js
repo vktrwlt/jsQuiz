@@ -193,6 +193,7 @@ go.onclick = function() {
     modal.style.display = "none";
     countdown(1);
     firstQuestion();
+    document.getElementById("ans").focus();
 };
 
 // When the user clicks anywhere outside of the modal, close it
@@ -201,6 +202,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
         countdown(1);
         firstQuestion();
+        document.getElementById("ans").focus();
     }
 };
 
