@@ -2,13 +2,19 @@ var currentQuestion = 0;
 var score = 0;
 var answer = document.getElementById("ans");
 var quiz = {};
-
+var apm = 0;
 //Press Enter key to submit answer
 $("#ans").keypress(function(e) {
     if (e.which == 13) {
         nextQuestion();
     }
 });
+
+$("body").keypress(function(e) {
+    apm++;
+});
+
+
 
 //countdown function input only in minutesm, mininum 1 minute
 function countdown(minutes) {
@@ -173,7 +179,7 @@ function randomQuestion() {
 function endGame() {
 
     retry.style.display = "block";
-
+    $("#apm").text("Your Action Per Minute (APM) is: " + apm);
 }
 
 // tutorial modal

@@ -1,13 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 html,body {
     height: 100%;
     margin: 0;
-    font-family: Arial;
+    /*font-family: Arial;*/
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+}
+
+header{
+  text-align: center;
+  background-color: #4CAF50;
+  padding: .1em;
+  color: #fff;
 }
 
 #timer {
@@ -53,8 +62,8 @@ footer ul li a {
     flex: 1;
     width: 75vw;
     margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
 }
 
 .flex-item {
@@ -89,7 +98,7 @@ footer ul li a {
     color: #3048ff;
     font-size: 165%;
     line-height: 190%;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     min-height: 45vh;
 }
 
@@ -115,7 +124,7 @@ input[type="text"] {
     background-color: #4CAF50;
     border-color: #5cb85c;
     border-radius: 2px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 110%;
     letter-spacing: 1px;
 }
@@ -190,7 +199,8 @@ input[type="text"] {
 }
 #retry .modal-body{
   font-weight: bold;
-  font-size:250%;
+  font-size:275%;
+  text-align: center;
 }
 .modal-header {
     padding: 2px 16px;
@@ -200,7 +210,7 @@ input[type="text"] {
 }
 
 .modal-body {
-    padding: 2px 16px;
+    padding: 10px 16px;
     font-size: 125%;
 }
 
