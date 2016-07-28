@@ -1,143 +1,215 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0" name="viewport">
+
     <title>Javascript Algorithm Quiz Game</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link href="styles/main.css" rel="stylesheet">
     <style>
 
-.flex-about {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
+    .flex-about {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
 
-}
+    }
 
-.flex-col {
-  border: 1px dashed black;
-  justify-content: center;
-  margin: 5px;
-  width:100%;
-}
+    .flex-col {
+    border: 1px dashed black;
+    justify-content: center;
+    margin: 5px;
+    width:100%;
+    }
 
-.us {
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
-}
-.name {
-  color: orange;
-  font-style: italic;
+    .us {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    }
+    .name {
+    color: orange;
+    font-style: italic;
 
 
 
-}
-.profile {
-  border: 1px dashed gray;
-}
-.info {
-  padding: 20px;
+    }
+    .profile {
+    border: 1px dashed gray;
+    }
+    .info {
+    padding: 20px;
 
-}
-.myButton {
-	-moz-box-shadow: 3px 4px 0px 0px #8a2a21;
-	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
-	box-shadow: 3px 4px 0px 0px #8a2a21;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
-	background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
-	background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
-	background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
-	background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
-	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
-	background-color:#c62d1f;
-	-moz-border-radius:18px;
-	-webkit-border-radius:18px;
-	border-radius:18px;
-	border:1px solid #d02718;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:7px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #810e05;
-}
-.myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
-	background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
-	background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
-	background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
-	background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
-	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
-	background-color:#f24437;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-.about-footer {
-  margin-bottom: 55px;
-}
-</style>
-
+    }
+    .myButton {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+    -webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+    box-shadow: 3px 4px 0px 0px #8a2a21;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+    background:-moz-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-webkit-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-o-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:-ms-linear-gradient(top, #c62d1f 5%, #f24437 100%);
+    background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+    background-color:#c62d1f;
+    -moz-border-radius:18px;
+    -webkit-border-radius:18px;
+    border-radius:18px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+    }
+    .myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+    background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+    background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+    background-color:#f24437;
+    }
+    .myButton:active {
+    position:relative;
+    top:1px;
+    }
+    .about-footer {
+    margin-bottom: 55px;
+    }
+    </style>
 </head>
 
 <body>
-  <div class="flex-about">
-    <div id="michael" class='flex-col'>
-      <div class="profile"><img class="us" src='http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400' /></div>
-      <div class="bio">
-        <h1 class ="name">Michael</h1>
-        <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-          desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-      <div class="about-footer"><a href="#" class="myButton">Click to learn about me!</a>
-      </div>
-    </div>
-    <div id="ruhany" class='flex-col'>
-      <div class="profile"><img class="us" src='http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400' /></div>
-      <div class="bio">
-        <h1 class ="name">Ruhany</h1>
-        <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-          desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-      <div class="about-footer"><a href="#" class="myButton">Click to learn about me!</a>
-      </div>
-    </div>
-    <div id="leo" class='flex-col'>    <div class="profile"><img class="us" src='http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400' /></div>
-        <div class="bio">
-          <h1 class ="name">Leo</h1>
-          <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-            desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div class="flex-about">
+        <div class='flex-col' id="michael">
+            <div class="profile"><img class="us" src=
+            'http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400'>
+            </div>
+
+
+            <div class="bio">
+                <h1 class="name">Michael</h1>
+
+
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+
+            <div class="about-footer">
+                <a class="myButton" href="#">Click to learn about me!</a>
+            </div>
         </div>
-        <div class="about-footer"><a href="#" class="myButton">Click to learn about me!</a>
-        </div></div>
-      <div id="tona" class='flex-col'>    <div class="profile"><img class="us" src='http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400' /></div>
-          <div class="bio">
-            <h1 class ="name">Tona</h1>
-            <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-          <div class="about-footer"><a href="#" class="myButton">Click to learn about me!</a>
-          </div></div>
-      <div id="victor" class='flex-col'>    <div class="profile"><img class="us" src='http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400' /></div>
-          <div class="bio">
-            <h1 class ="name">Victor</h1>
-            <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-              desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-          <div class="about-footer"><a href="#" class="myButton">Click to learn about me!</a>
-          </div></div>
+
+
+        <div class='flex-col' id="ruhany">
+            <div class="profile"><img class="us" src=
+            'http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400'>
+            </div>
+
+
+            <div class="bio">
+                <h1 class="name">Ruhany</h1>
+
+
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+
+            <div class="about-footer">
+                <a class="myButton" href="#">Click to learn about me!</a>
+            </div>
+        </div>
+
+
+        <div class='flex-col' id="leo">
+            <div class="profile"><img class="us" src=
+            'http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400'>
+            </div>
+
+
+            <div class="bio">
+                <h1 class="name">Leo</h1>
+
+
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+
+            <div class="about-footer">
+                <a class="myButton" href="#">Click to learn about me!</a>
+            </div>
+        </div>
+
+
+        <div class='flex-col' id="tona">
+            <div class="profile"><img class="us" src=
+            'http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400'>
+            </div>
+
+
+            <div class="bio">
+                <h1 class="name">Tona</h1>
+
+
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+
+            <div class="about-footer">
+                <a class="myButton" href="#">Click to learn about me!</a>
+            </div>
+        </div>
+
+
+        <div class='flex-col' id="victor">
+            <div class="profile"><img class="us" src=
+            'http://i2.wp.com/radaronline.com/wp-content/uploads/2016/02/the-rock-radar.jpg?resize=540%2C400'>
+            </div>
+
+
+            <div class="bio">
+                <h1 class="name">Victor</h1>
+
+
+                <p class="info">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+
+            <div class="about-footer">
+                <a class="myButton" href="#">Click to learn about me!</a>
+            </div>
+        </div>
     </div>
 </body>
-
 </html>
