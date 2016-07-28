@@ -217,3 +217,15 @@ window.onclick = function(event) {
 
     }
 };
+
+var h = false;
+$("#credit").click(function(){
+    if (h == false){
+        $("#popUp").fadeIn();
+        $("#creditText").fadeIn(function(){h = true;});
+    }
+    if (h == true){
+        $("#popUp").fadeOut();
+        $("#creditText").fadeOut(function(){h=false});
+    }
+});

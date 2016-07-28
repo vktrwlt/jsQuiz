@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -27,8 +28,8 @@
 
 
             <div id="answer">
-                <input id="ans" placeholder="Your answer" type="text"> <button id="ansButton" onclick=
-                "nextQuestion()">Submit</button>
+                <input id="ans" placeholder="Your answer" type="text">
+                <button id="ansButton" onclick="nextQuestion()">Submit</button>
             </div>
             <!-- end answer -->
             <!--cant delete this wrapper, don't know why. temp solution: display:none -->
@@ -66,7 +67,10 @@
 
 
             <li>
-                <a href="#">Credit</a>
+                <div id="credit">
+                    <span>Credits</span>
+                    <span id="creditText"> <a href="http://algorithm.codingdojo.com/" target="_blank">Inspired by Coding Dojo</a> </span>
+                </div>
             </li>
         </ul>
     </footer>
@@ -111,8 +115,8 @@
 
 
                     <li>
-                        <p><span class="pacman">&lt; &gt;</span> Seperate answers with a comma for each
-                        console.log();</p>
+                        <p><span class="pacman">&lt; &gt;</span> Seperate answers with a comma for each console.log();
+                        </p>
                     </li>
 
 
@@ -164,4 +168,5 @@
     <script src="js/quiz.js">
     </script>
 </body>
+
 </html>

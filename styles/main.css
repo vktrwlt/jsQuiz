@@ -214,6 +214,25 @@ input[type="text"] {
     margin: 3vh 0;
     color: #fff;
 }
+#creditText{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 30px;
+    width:200px;
+
+}
+#creditText a{
+  color:blue;
+  text-decoration: underline;
+}
+
+#credit{
+
+    position: relative;
+    cursor: pointer;
+    display:inline;
+}
 
 @media screen and (max-width:768px) {
     #flex-notepad {
