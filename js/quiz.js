@@ -179,7 +179,7 @@ function randomQuestion() {
 function endGame() {
 
     retry.style.display = "block";
-    $("#apm").text("Your Action Per Minute (APM) is: " + apm);
+    $("#apm").text("Your Actions Per Minute (APM) is: " + apm);
 }
 
 // tutorial modal
