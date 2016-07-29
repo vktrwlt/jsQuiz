@@ -291,3 +291,21 @@ input[type="text"] {
         display: none;
     }
 }
+
+@media (-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi){
+    /* Retina-specific stuff here */
+
+header h1{
+  font-size:120%;
+}
+#timer h1{
+  font-size:170%;
+}
+#timer h2{
+  font-size:120%;
+}
+.doodle{
+  height: 8vh;
+}
+}
