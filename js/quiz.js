@@ -191,7 +191,7 @@ var go = document.getElementById("go-button");
 // When the user clicks on <span> (x), close the modal
 go.onclick = function() {
     modal.style.display = "none";
-    countdown(1);
+    countdown(2);
     firstQuestion();
     document.getElementById("ans").focus();
 };

@@ -24,11 +24,7 @@ header{
 height: 8vh;
 width: auto;
 }
-.img-fluid{
-  /*width:100%;
-  height:auto;*/
 
-}
 
 #timer {
     display: flex;
@@ -100,7 +96,7 @@ footer ul li a {
 #pad {
     display: flex;
     width: 100%;
-    height: 56vh;
+    height: 55vh;
     resize: none;
 }
 
