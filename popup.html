@@ -1,0 +1,111 @@
+<!Doctype html>
+
+<style>
+*{
+  border:1px dashed black;
+
+  text-align: center;
+}
+#myModal {
+  height: auto;
+  background-color: crimson;
+  display:none;
+  padding: 30px;
+  positon: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+}
+.modal-content {
+  height: auto;
+  background-color: blue;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close{
+  color: white;
+  float:right;
+  font-size:28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  height: 100px;
+  background-color: #b0e0e6;
+  color: black;
+  font-size:180%;
+
+  margin-bottom: 10px;
+}
+.modal-body {
+  height: auto;
+  background-color: lime;
+  margin-bottom:20px;
+
+}
+.modal-footer {
+  height: 100px;
+  background-color: grey;
+
+}
+</style>
+
+<html>
+<body>
+  <button id="myBtn">Open Modal </button>
+<div id = "myModal">
+  <div class="modal-content">
+    <div class="modal-header">
+    <span class="close">x </span>
+    <p>JS Algorithmn Quizzer</p>
+  </div><!-- End modal-header -->
+  <div class="modal-body">
+<h1>Instructions</h1>
+<ul>
+  <li>Press Enter or Submit</li>
+    <li>If Array Put Brackets [ ]</li>
+        <li>Insert Commas (,) for each console.log</li>
+            <li>Score as many as you can; Wrong answers do not count!</li>
+ </ul>
+
+
+
+
+
+  </div><!--End modal-body -->
+  <div class="modal-footer">.
+    <button>Ready! Start Game! </button>
+  </div><!--End modal-footer -->
+</div><!-- End modal-content -->
+</div><!--End myModal -->
+
+<script>
+var modal = document.getElementById("myModal");
+var button = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+button.onclick = function(){
+  modal.style.display = "block";
+  span.onclick = function (){
+    modal.style.display = "none";
+  }
+}
+
+window.onclick = function(event){
+  if (event.target == modal){
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+
+</html>
